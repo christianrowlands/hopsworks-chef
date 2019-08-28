@@ -13,6 +13,8 @@ include_attribute "dela"
 include_attribute "hive2"
 include_attribute "hops"
 
+default['java']['install_flavor']                = "openjdk"
+
 default['hopsworks']['version']                  = node['install']['version']
 
 # Flyway needs to know the previous versions of Hopsworks to generate the .sql files.
